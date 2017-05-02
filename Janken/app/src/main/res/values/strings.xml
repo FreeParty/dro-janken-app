@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Janken</string>
+    <string name="mes01">"Let's Play!"</string>
+    <string name="counter">
+        Win-Lose Record\n
+         Round: %1$d\n
+         Win :%2$d\n
+         Lose:%3$d\n
+         Draw:%4$d\n
+    </string>
+
+    <string name="hand_r">Rock</string>
+    <string name="hand_s">Scissors</string>
+    <string name="hand_p">Paper</string>
+
+    <string name="res_w">Win</string>
+    <string name="res_l">Lose</string>
+    <string name="res_d">Draw</string>
+
+    <string name="btn_reset">Reset</string>
+
+    <string name="mes_play">
+        YOU:%1$s\n
+        CPU:%2$s\n
+        Result:%3$s
+    </string>
+
+    <string name="mes_res">Record Reset</string>
+
 </resources>
