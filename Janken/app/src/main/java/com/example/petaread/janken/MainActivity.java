@@ -6,6 +6,7 @@ package com.example.petaread.janken;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
+        import android.widget.ImageView;
         import android.widget.TextView;
         import android.widget.Toast;
         import java.util.Random;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView t_display;
     TextView t_counter;
     Button bt[] = new Button[3];
-    Button bt_r;
+    Button bt_r; // reset button
 
     Pattern select;
     Pattern cpu_select;
@@ -150,6 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view){
+        ImageView imageView = (ImageView)findViewById(R.id.imageView);
         //押したボタンに応じて判定
         switch(view.getId()){
             case R.id.button_R:{
@@ -169,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.button_reset:{
                 Toast.makeText(this ,getString(R.string.mes_res) ,Toast.LENGTH_SHORT).show();
+                imageView.setImageResource(R.mipmap.ic_launcher);
                 play_flag = false;
                 break;
             }
@@ -185,6 +188,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(result == ResultId.WIN ) counter_W++;
             if(result == ResultId.LOSE) counter_L++;
             if(result == ResultId.DRAW) counter_D++;
+
+            if(cpu_select.ordinal() == 0) imageView.setImageResource(R.drawable.rock);
+            if(cpu_select.ordinal() == 1) imageView.setImageResource(R.drawable.scissors);
+            if(cpu_select.ordinal() == 2) imageView.setImageResource(R.drawable.paper);
         }
         else{
             //リセットボタンを押した場合
