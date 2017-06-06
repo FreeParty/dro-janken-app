@@ -1,6 +1,8 @@
 # dro-janken-app
 This app is janken
 
+Hello commit
+
 ### Installation
 ```
 git clone <cloneのURL>
