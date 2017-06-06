@@ -2,6 +2,7 @@
 This app is janken
 
 Hello commit
+やきう
 
 Hello Commit!! Hello Commit!! -by Murakami !!
 
