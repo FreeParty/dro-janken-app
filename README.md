@@ -3,6 +3,8 @@ This app is janken
 
 Hello commit
 
+Hello Commit!! Hello Commit!! -by Murakami !!
+
 ### Installation
 ```
 git clone <cloneのURL>
